@@ -1,0 +1,12 @@
+diff -Nru o.adodb-202/setup.py n.adodb-202/setup.py
+--- o.adodb-202/setup.py	2005-06-15 01:52:42.000000000 +0000
++++ n.adodb-202/setup.py	2007-12-23 18:31:32.000000000 +0000
+@@ -3,7 +3,7 @@
+ from distutils.core import setup
+ 
+ setup(name="adodb",
+-      version="2.00",
++      version="2.02b",
+       description="ADOdb Python",
+       author="John Lim",
+       author_email="jlim#natsoft.com.my",
