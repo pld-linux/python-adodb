@@ -2,8 +2,8 @@
 %define		ver	%(echo %{version} | tr -d . )
 %define		postrel	b
 #
-Summary:	The python version of ADOdb database library
-#Summary(pl.UTF-8):	-
+Summary:	The Python version of ADOdb database library
+Summary(pl.UTF-8):	Pythonowa wersja biblioteki bazodanowej ADOdb
 Name:		python-%{module}
 Version:	2.02
 Release:	%{postrel}.0.1
@@ -24,7 +24,11 @@ ADOdb is a database abstraction library (modelled on Microsoft's
 database API's). ADOdb was originally developed for PHP, and ported to
 Python. The Python version implements a subset of the PHP version.
 
-#%description -l pl.UTF-8
+%description -l pl.UTF-8
+ADOdb to biblioteka abstrakcji baz danych modelowana na podstawie API
+bazodanowego Microsoftu. ADOdb pierwotnie powstało w PHP i zostało
+sportowane do Pythona. Wersja pythonowa implementuje podzbiór wersji w
+PHP.
 
 %prep
 %setup -q -n %{module}-%{ver}
@@ -48,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE.txt adodb-py-docs.htm
-%dir %{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{module}/*.py[co]
-%{py_sitescriptdir}/adodb-2.02b-py2.5.egg-info
+%dir %{py_sitescriptdir}/adodb
+%{py_sitescriptdir}/adodb/*.py[co]
+%{py_sitescriptdir}/adodb-*.egg-info
