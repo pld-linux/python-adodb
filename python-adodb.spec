@@ -14,7 +14,7 @@ Source0:	http://dl.sourceforge.net/adodb/%{module}-py%{ver}%{postrel}.zip
 Patch0:		%{name}-setup.patch
 URL:		http://phplens.com/lens/adodb/adodb-py-docs.htm
 BuildRequires:	python-modules
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	unzip
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
